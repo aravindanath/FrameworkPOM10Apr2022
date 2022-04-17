@@ -4,9 +4,8 @@ import com.aventstack.extentreports.ExtentTest;
 import org.testng.annotations.Test;
 import pages.BasePage;
 import pages.RegistrationPage;
-import utilities.ExtentManager;
 
-public class TC_RF_001 extends BaseTest{
+public class TC_RF_002 extends BaseTest{
 
 
 
@@ -17,7 +16,7 @@ public class TC_RF_001 extends BaseTest{
                 email = BasePage.getEmail(),mobile = BasePage.getMobileNumber(),password = BasePage.getFirstName();
 
         RegistrationPage rp = new RegistrationPage(driver);
-      ExtentTest  test = report.createTest("TC_RF_001");
+        ExtentTest  test = report.createTest("TC_RF_002");
         test.info(driver.getCurrentUrl());
         test.info(driver.getTitle());
         rp.navigateToRegisterPage();

@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -193,4 +194,7 @@ public class BasePage {
         }
         return value;
     }
+
+
+
 }
